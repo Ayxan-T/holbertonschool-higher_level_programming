@@ -7,9 +7,9 @@ if number < 0:
     last_digit = "-" + last_digit
 
 if int(last_digit) == 0:
-    msg = "is zero"
+    msg = "is 0"
 elif int(last_digit) < 6:
-    msg = "is less than 6 and not zero"
+    msg = "is less than 6 and not 0"
 else:
     msg = "is greater than 5"
 
