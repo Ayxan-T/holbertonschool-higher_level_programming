@@ -13,5 +13,4 @@ elif int(last_digit) < 6:
 else:
     msg = "is greater than 5"
 
-print(f"Last digit of {number} is {last_digit} " \
-       f"and {msg}")
+print(f"Last digit of {number} is {last_digit} and {msg}")
