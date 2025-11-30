@@ -2,7 +2,7 @@
 
 for i in range(100):
     if i == 99:
-        print("{}".format(i))
+        print("{}\n".format(i), end="")
         break
     print("{:02d}, ".format(i), end="")
 
