@@ -9,5 +9,5 @@ elif number % 10 < 6:
 else:
     msg = "is greater than 5"
 
-print(f"The last digit of {number} is {number % 10} " \
+print(f"Last digit of {number} is {number % 10} " \
        f"and {msg}")
