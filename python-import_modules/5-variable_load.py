@@ -4,7 +4,7 @@
 def main():
     import a from variable_load_5
 
-    print("{}".format(a))
+    print(a)
 
 
 if __name__ == "__main__":
