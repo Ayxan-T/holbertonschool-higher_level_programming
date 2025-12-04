@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # here goes your f comment
 
-def add_tuple(tuple_a=(), tuple_b()):
+def add_tuple(tuple_a=(), tuple_b=()):
     sums = [0, 0]
 
     k = -1
