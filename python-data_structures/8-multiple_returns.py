@@ -2,7 +2,7 @@
 # here goes your f comment
 
 def multiple_returns(sentence):
-    l = len(sentence)
-    if l == 0:
-        return (l, None)
-    return (l, sentence[0])
+    length = len(sentence)
+    if length == 0:
+        return (length, None)
+    return (length, sentence[0])
