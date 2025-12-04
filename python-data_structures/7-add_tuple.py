@@ -10,7 +10,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
             break
         k += 1
         sums[k] += item
-    
     k = -1
     for item in tuple_b:
         if k == 1:
