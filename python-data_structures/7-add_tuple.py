@@ -17,3 +17,5 @@ def add_tuple(tuple_a=(), tuple_b=()):
             break
         k += 1
         sums[k] += item
+
+    return tuple(sums)
