@@ -7,5 +7,5 @@ def roman_to_int(roman_string):
     for i in range(1, len(roman_string)):
         if roman_dict[roman_string[i]] > roman_dict[roman_string[i-1]]:
             res -= roman_dict[roman_string[i-1]]*2
-        res += roman_dict[roman_string[i-1]]
+        res += roman_dict[roman_string[i]]
     return res
