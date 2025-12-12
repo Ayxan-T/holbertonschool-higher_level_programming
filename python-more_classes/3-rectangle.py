@@ -13,10 +13,14 @@ class Rectangle:
         self.height = height
 
     def __str__(self):
-        for i in range(1, self.perimeter() + 1):
-            print("#", end='')
-            if i % self.width == 0:
-                print()
+        if self.perimeter() == 0:
+            return ""
+        res = ""
+        for i in range(self.height):
+            for j in range(self.width):
+                res = res + "#"
+            res = res + "\n"
+        return res
 
     @property
     def width(self):
