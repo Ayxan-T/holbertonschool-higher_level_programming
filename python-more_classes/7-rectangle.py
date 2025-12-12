@@ -9,11 +9,11 @@ class Rectangle:
         a Rectangle class
     """
     number_of_instances = 0
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-        self.print_symbol = '#'
         Rectangle.number_of_instances += 1
 
     def __str__(self):
