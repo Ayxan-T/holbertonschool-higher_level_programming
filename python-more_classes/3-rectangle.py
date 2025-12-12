@@ -19,7 +19,8 @@ class Rectangle:
         for i in range(self.height):
             for j in range(self.width):
                 res = res + "#"
-            res = res + "\n"
+            if i < self.height - 1:
+                res = res + "\n"
         return res
 
     @property
