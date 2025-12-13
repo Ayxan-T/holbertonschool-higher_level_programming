@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Module: 8-rectangle """
 
-BaseGeometry = __import__("7-base_geometry.py").BaseGeometry
+BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 class Rectangle(BaseGeometry):
     """ A class used to represent a geometric rectangle """
