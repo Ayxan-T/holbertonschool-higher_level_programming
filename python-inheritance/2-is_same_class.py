@@ -1,7 +1,21 @@
 #!/usr/bin/python3
-""" a module defining only one function """
+"""
+Module: 0-is_same_class
+A module defining a single function to check for exact class instance.
+
+This module is part of the Python - Inheritance project.
+"""
 
 
 def is_same_class(obj, a_class):
-    """ a function that checks whether 'obj' is exactly an instance of 'a_class' or not """
-    return isinstance(obj, a_class)
+    """
+    Checks if an object is **exactly** an instance of the specified class.
+
+    Args:
+        obj (any): The object to check.
+        a_class (type): The class to match against.
+
+    Returns:
+        bool: True if 'obj' is exactly an instance of 'a_class', False otherwise.
+    """
+    return type(obj) is a_class
