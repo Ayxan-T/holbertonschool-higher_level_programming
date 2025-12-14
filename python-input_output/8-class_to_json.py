@@ -20,5 +20,5 @@ def class_to_json(obj):
     for a in dir(obj):
         if a[:2] == "__":
             continue
-        res[a] = obj[a]
+        res[a] = obj.getattr(a)
     return res
