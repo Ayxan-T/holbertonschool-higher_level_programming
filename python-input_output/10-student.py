@@ -14,12 +14,12 @@ class Student:
 
     def to_json(self, attrs=None):
         res = dict()
-        if attrs:
-            for attr in attrs:
-                res[attr] = getattr(self, attr)
-            return res
-        for a in dir(self):
+        if not attrs:
+            for a in dir(self):
             if a[:2] == "__" or callable(getattr(self, a)):
                 continue
             res[a] = getattr(self, a)
+        else:
+            for attr in attrs:
+                res[attr] = getattr(self, attr)
         return res
