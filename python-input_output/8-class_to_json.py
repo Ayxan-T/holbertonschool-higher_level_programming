@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """
     Module: 8-class_to_json
     This module is a part of the 'Python - Input/Output' project.
