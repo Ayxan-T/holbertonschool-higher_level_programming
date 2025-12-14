@@ -3,7 +3,6 @@
     Module: 8-class_to_json
     This module is a part of the 'Python - Input/Output' project.
 """
-import json
 
 
 def class_to_json(obj):
@@ -17,4 +16,9 @@ def class_to_json(obj):
         serialized dictionary form of obj
     """
 
-    return json.dumps(obj)
+    res = dict()
+    for a in dir(obj):
+        if a[:2] == "__":
+            continue
+        res[a] = obj[a]
+    return res
