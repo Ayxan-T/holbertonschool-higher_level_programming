@@ -16,9 +16,9 @@ class Student:
         res = dict()
         if not attrs:
             for a in dir(self):
-            if a[:2] == "__" or callable(getattr(self, a)):
-                continue
-            res[a] = getattr(self, a)
+                if a[:2] == "__" or callable(getattr(self, a)):
+                    continue
+                res[a] = getattr(self, a)
         else:
             for attr in attrs:
                 res[attr] = getattr(self, attr)
