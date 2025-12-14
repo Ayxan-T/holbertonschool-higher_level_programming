@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Module: 2-append_write 
+    Module: 2-append_write
     This module is a part of the 'Python - Input/Output' project.
 """
 
@@ -11,7 +11,7 @@ def append_write(filename="", text=""):
         and returns the number of characters added.
         args:
             filename - name of the file
-            text - the string to be appended 
+            text - the string to be appended
         returns:
             number of characters appended
     """
