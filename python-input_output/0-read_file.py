@@ -3,6 +3,8 @@
     Module: 0-read_file
     This module is a part of the 'Python - Input/Output' project.
 """
+
+
 def read_file(filename=""):
     """
         A function that reads a text file (UTF8) and prints it to stdout
