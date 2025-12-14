@@ -3,8 +3,6 @@
     Module: 3-to_json_string
     This module is a part of the 'Python - Input/Output' project.
 """
-
-
 import json
 
 
