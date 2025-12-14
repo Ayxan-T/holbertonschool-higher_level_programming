@@ -14,7 +14,7 @@ class Student:
 
     def to_json(self):
         res = dict()
-   	    for a in dir(self):
+        for a in dir(self):
             if a[:2] == "__":
                 continue
             res[a] = getattr(self, a)
