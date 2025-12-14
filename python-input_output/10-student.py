@@ -21,5 +21,6 @@ class Student:
                 res[a] = getattr(self, a)
         else:
             for attr in attrs:
-                res[attr] = getattr(self, attr)
+                if attr in dir(obj):
+                    res[attr] = getattr(self, attr)
         return res
