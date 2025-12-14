@@ -15,7 +15,7 @@ class Student:
     def to_json(self):
         res = dict()
         for a in dir(self):
-            if a[:2] == "__":
+            if a[:2] == "__" or callable(getattr(self, a)):
                 continue
             res[a] = getattr(self, a)
         return res
