@@ -23,10 +23,14 @@ class CustomObject:
 
     @classmethod
     def deserialize(cls, filename):
-        with open(filename, "rb") as f:
-            try:
+        try:
+            with open(filename, "rb") as f:
                 pickled_obj = f.read()
-            except Exception as e:
+        except Exception as e:
                 return None
-        return pickle.loads(pickled_obj)
 
+        try:
+            py_obj = pickle.loads(pickled_obj)
+        catch Exception:
+            return None
+        return py_obj
