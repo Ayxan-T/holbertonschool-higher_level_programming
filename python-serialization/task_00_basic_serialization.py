@@ -24,4 +24,4 @@ def load_and_deserialize(filename):
     """
     with open(filename, 'r') as f:
         json_str = f.read()
-    return json.load(json_str)
+    return json.loads(json_str)
