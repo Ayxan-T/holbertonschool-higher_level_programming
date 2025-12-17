@@ -26,7 +26,7 @@ class CustomObject:
         try:
             with open(filename, "rb") as f:
                 pickled_obj = f.read()
-        except:
+        except Exception as e:
             return None
         return pickle.loads(pickled_obj)
 
