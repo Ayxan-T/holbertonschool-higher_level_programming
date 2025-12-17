@@ -31,6 +31,6 @@ class CustomObject:
 
         try:
             py_obj = pickle.loads(pickled_obj)
-        catch Exception:
+        except Exception:
             return None
         return py_obj
