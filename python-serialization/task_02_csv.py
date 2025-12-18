@@ -1,5 +1,5 @@
 #!/usr/bin/python3 
-""" Module: task_00_basic_serialization
+""" Module: task_02_csv
     This module is a part of the 'Python - Serialization' project.
 """
 
