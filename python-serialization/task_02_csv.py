@@ -9,8 +9,15 @@ import json
 
 def convert_csv_to_json(csv_file):
     """ A function that converts a CSV file to a JSON file. """
-    with open(csv_file) as f:
-        reader = csv.DictReader(f)
-        print(reader)
-        # json_obj = [row for row in reader]
+    try:
+        with open(csv_file) as f:
+            reader = csv.DictReader(f)
+            json_obj = [row for row in reader]
+    except:
+        return False
+
+    with open("data.json", "w") as f:
+        json.dump(json_obj, f)
+
+    return True
         
