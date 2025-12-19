@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 def serialize_to_xml(dictionary, filename):
     root = ET.Element("data")
     for key, value in dictionary.items():
-        child = SubElement(root, key)
+        child = ET.SubElement(root, key)
         child.text = value
 
     tree = TreeElement(root)
